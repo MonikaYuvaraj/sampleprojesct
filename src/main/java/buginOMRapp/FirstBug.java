@@ -2,10 +2,10 @@ package buginOMRapp;
 
 import java.time.Duration;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.Assert;
 
 import io.appium.java_client.AppiumDriver;
 import omrHotelBooking.BaseClassMob;
@@ -39,7 +39,7 @@ public class FirstBug extends BaseClassMob{
 		System.out.println(ExploreHotel);
 		
 		
-		//Assert.assertEquals(ExploreHotel, "ExploreHotel", "Verified");
+		Assert.assertEquals(ExploreHotel, "ExploreHotel", "Verified");
 		
 		driver.findElement(By.xpath("//android.widget.TextView[@resource-id=\"header_welcome\"]")).click();
 		
@@ -49,6 +49,8 @@ public class FirstBug extends BaseClassMob{
 		driver.findElement(By.xpath("//android.widget.ImageView[@resource-id=\"header_back_image\"]")).click();
 		
 		Assert.assertEquals(ExploreHotel,"Crashed");
+		
+		
 
 		
 	
