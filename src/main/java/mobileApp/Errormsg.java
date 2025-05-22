@@ -51,6 +51,35 @@ public class Errormsg {
 		String t6 = driver.findElement(By.xpath("//android.widget.TextView[@text=\"Please select no. of adults\"]")).getText();
 		System.out.println(t6);
 		
+
+		
+		////////
+		///
+		///
+		///
+		///
+		///
+		///
+		///
+		///
+		///
+		
+		String t7 = driver.findElement(By.xpath("//android.widget.TextView[@text=\"Please select city\"]")).getText();
+		System.out.println(t7);
+		
+		String t8 = driver.findElement(By.xpath("//android.widget.TextView[@text=\"Please select Check-in date\"]")).getText();
+		System.out.println(t8);
+		
+		String t9 = driver.findElement(By.xpath("//android.widget.TextView[@text=\"Please select Check-out date\"]")).getText();
+		System.out.println(t9);
+		
+		String t01 = driver.findElement(By.xpath("//android.widget.TextView[@text=\"Please select no. of rooms\"]")).getText();
+		System.out.println(t01);
+		
+		String t02 = driver.findElement(By.xpath("//android.widget.TextView[@text=\"Please select no. of adults\"]")).getText();
+		System.out.println(t02);
+		
+		
 		
 	}
 
